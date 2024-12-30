@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>VibrArteNoticias</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="me-3 text-white-50"
+                            ><a href="#"
+                                ><i
+                                    class="fas fa-map-marker-alt me-2 text-secondary"
+                                ></i></a
+                            >Gran Vía de les Corts Catalanes, 688, Entresuelo
+                            2B, L'Eixample, 08018 Barcelona, España</small
+                        >
+                        <small class="me-3 text-white-50"
+                            ><a href="#"
+                                ><i
+                                    class="fas fa-envelope me-2 text-secondary"
+                                ></i></a
+                            >vibr_arte@gmail.com</small
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-white fw-bold d-block">
+                            VibrArte<span class="text-secondary">Noticias</span>
+                        </h1>
+                    </a>
+                    <button
+                        type="button"
+                        class="navbar-toggler me-0"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse bg-transparent"
+                        id="navbarCollapse"
+                    >
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a
+                                href="index.html"
+                                class="nav-item nav-link active text-secondary"
+                                >Inicio</a
+                            >
+                            <a href="about.html" class="nav-item nav-link"
+                                >Acerca de</a
+                            >
+                            <a href="catalog.html" class="nav-item nav-link"
+                                >Catálogo</a
+                            >
+                            <a href="contact.html" class="nav-item nav-link"
+                                >Contacto</a
+                            >
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Primer slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="1"
+                        aria-label="Segundo slide"
+                    ></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img
+                            style="width: 100%"
+                            src="img/carousel-1.jpg"
+                            class="img-fluid"
+                            alt="Primer slide"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h6 class="text-secondary h4 animated fadeInUp">
+                                    Explorando el Mundo del Arte en España
+                                </h6>
+                                <h1
+                                    class="text-white display-1 mb-4 animated fadeInRight"
+                                >
+                                    Las Últimas Tendencias del Arte y la Cultura
+                                    en España
+                                </h1>
+                                <p
+                                    class="mb-4 text-white fs-5 animated fadeInDown"
+                                >
+                                    Descubre las últimas exposiciones, artistas
+                                    y eventos que están marcando tendencia en el
+                                    mundo del arte y la cultura en España.
+                                    Conoce las innovaciones y los movimientos
+                                    que están transformando la escena cultural
+                                    en el país.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            style="width: 100%"
+                            src="img/carousel-2.jpg"
+                            class="img-fluid"
+                            alt="Segundo slide"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h6 class="text-secondary h4 animated fadeInUp">
+                                    El Futuro de la Cultura en España
+                                </h6>
+                                <h1
+                                    class="text-white display-1 mb-4 animated fadeInLeft"
+                                >
+                                    Una Mirada al Futuro de la Música, el Arte y
+                                    el Deporte en España
+                                </h1>
+                                <p
+                                    class="mb-4 text-white fs-5 animated fadeInDown"
+                                >
+                                    España sigue siendo un referente en el mundo
+                                    de la música, el arte y el deporte. Conoce
+                                    las apuestas más innovadoras y cómo los
+                                    eventos culturales están transformando el
+                                    panorama nacional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Fact Start -->
+        <div class="container-fluid bg-secondary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">
+                                1720
+                            </h1>
+                            <h5 class="text-white mt-1">Clientes felices</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">12</h1>
+                            <h5 class="text-white mt-1">Años de experiencia</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">134</h1>
+                            <h5 class="text-white mt-1">Premios</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">25</h1>
+                            <h5 class="text-white mt-1">Miembros del equipo</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact End -->
+
+        <!-- Features Start -->
+        <div class="container-fluid py-5 my-5">
+            <div class="container pt-5">
+                <div class="row g-5">
+                    <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div class="h-100 position-relative">
+                            <img
+                                style="object-fit: cover"
+                                src="img/features-1.jpg"
+                                class="img-fluid rounded"
+                                alt=""
+                                style="width: 100%; height: 100%"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                    >
+                        <h5 class="text-primary">
+                            Visión estratégica en el mundo del arte
+                        </h5>
+                        <h1 class="mb-4">
+                            Aprovechando el talento y la creatividad en la
+                            cultura española
+                        </h1>
+                        <p>
+                            Nuestra aproximación al mundo del arte está
+                            profundamente enraizada en una visión estratégica
+                            que valora la creatividad, la innovación y el
+                            talento de los artistas españoles. Al centrarnos en
+                            la cultura local, buscamos construir una base sólida
+                            de valor y estabilidad que impulse el éxito a largo
+                            plazo de las iniciativas artísticas.
+                        </p>
+                        <p class="mb-4">
+                            Creemos en el poder de las artes como un catalizador
+                            para la creación cultural, proporcionando a nuestros
+                            clientes los recursos necesarios para navegar por
+                            las complejidades del mercado cultural global.
+                            Nuestro enfoque integral está diseñado para
+                            adaptarse a las necesidades únicas de cada creador y
+                            artista, permitiéndonos desarrollar proyectos que
+                            resistan la prueba del tiempo.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="row g-5"
+                    style="flex-direction: row-reverse; margin-top: 50px"
+                >
+                    <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div class="h-100 position-relative">
+                            <img
+                                style="object-fit: cover"
+                                src="img/features-2.jpg"
+                                class="img-fluid rounded"
+                                alt=""
+                                style="width: 100%; height: 100%"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                    >
+                        <h5 class="text-primary">
+                            Planificación cultural innovadora
+                        </h5>
+                        <h1 class="mb-4">
+                            Construyendo el futuro de la cultura a través del
+                            arte y el deporte
+                        </h1>
+                        <p>
+                            En el núcleo de nuestra aproximación está la
+                            planificación cultural innovadora, inspirada por los
+                            principios de liderazgo cultural español. Entendemos
+                            el papel crucial que juegan el arte y el deporte en
+                            la formación de una sociedad culturalmente rica y
+                            diversa.
+                        </p>
+                        <p class="mb-4">
+                            El arte no es solo una forma de expresión; es una
+                            piedra angular en nuestra estrategia, proporcionando
+                            una vía única para el crecimiento de los proyectos
+                            culturales en mercados emergentes y establecidos.
+                            Nuestro enfoque es holístico, combinando sabiduría
+                            tradicional con técnicas modernas para crear un
+                            panorama cultural equilibrado y diversificado. Al
+                            centrarnos en metas a largo plazo y gestionar
+                            cuidadosamente los riesgos, ayudamos a nuestros
+                            clientes a lograr el éxito y la seguridad en un
+                            mundo cultural en constante cambio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Project Start -->
+        <div class="container-fluid project py-5 my-5">
+            <div class="container py-5">
+                <div
+                    class="text-center mx-auto pb-5 wow fadeIn"
+                    data-wow-delay=".3s"
+                    style="max-width: 600px"
+                >
+                    <h5 class="text-primary">
+                        Proyectos Transformadores en el Mundo del Arte, el
+                        Deporte y la Cultura
+                    </h5>
+                    <h1>
+                        Empoderando la Cultura a Través de Iniciativas
+                        Estratégicas
+                    </h1>
+                    <p>
+                        Nuestro portafolio de proyectos representa una visión
+                        audaz para el futuro del arte, el deporte y la cultura,
+                        impulsada por principios innovadores. Cada iniciativa
+                        está cuidadosamente diseñada para aprovechar el
+                        potencial de las artes y la cultura, aprovechando la
+                        experiencia de destacados profesionales. Nos enfocamos
+                        en garantizar que estos proyectos no solo sean
+                        sostenibles, sino también enriquecedores para la
+                        creación de una cultura española duradera. A través de
+                        una planificación meticulosa y un compromiso con la
+                        innovación, estamos transformando el panorama cultural,
+                        ofreciendo oportunidades que resuenan tanto en mercados
+                        emergentes como establecidos. Explora nuestros proyectos
+                        para ver cómo estamos redefiniendo el éxito en el mundo
+                        del arte y la cultura.
+                    </p>
+                </div>
+                <div class="row g-5">
+                    <div
+                        class="col-md-6 col-lg-6 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img
+                                    src="img/project-1.jpg"
+                                    class="img-fluid w-100 rounded"
+                                    alt=""
+                                />
+                                <div class="project-content">
+                                    <a class="text-center">
+                                        <h4 class="text-secondary">
+                                            Desarrollo de Proyectos Culturales
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 wow fadeIn"
+                        data-wow-delay=".5s"
+                    >
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img
+                                    src="img/project-2.jpg"
+                                    class="img-fluid w-100 rounded"
+                                    alt=""
+                                />
+                                <div class="project-content">
+                                    <a class="text-center">
+                                        <h4 class="text-secondary">
+                                            Iniciativas de Exploración Cultural
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 wow fadeIn"
+                        data-wow-delay=".7s"
+                    >
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img
+                                    src="img/project-3.jpg"
+                                    class="img-fluid w-100 rounded"
+                                    alt=""
+                                />
+                                <div class="project-content">
+                                    <a class="text-center">
+                                        <h4 class="text-secondary">
+                                            Promoción del Arte Contemporáneo
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img
+                                    src="img/project-4.jpg"
+                                    class="img-fluid w-100 rounded"
+                                    alt=""
+                                />
+                                <div class="project-content">
+                                    <a class="text-center">
+                                        <h4 class="text-secondary">
+                                            Proyectos Culturales Sostenibles
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project End -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5 mb-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto pb-5 wow fadeIn"
+                    data-wow-delay=".3s"
+                    style="max-width: 600px"
+                >
+                    <h5 class="text-primary">
+                        Navegando el Futuro de la Cultura y el Deporte
+                    </h5>
+                    <h1>
+                        Perspectivas y Estrategias para un Crecimiento Cultural
+                        Sostenible
+                    </h1>
+                    <p>
+                        Bienvenidos a nuestro blog más reciente, donde
+                        exploramos las estrategias de vanguardia y perspectivas
+                        que definen el éxito en el arte, el deporte y la cultura
+                        en España. Nuestros artículos profundizan en los
+                        principios innovadores que están estableciendo nuevos
+                        estándares en el mundo cultural y deportivo. Con un
+                        enfoque en la evolución de la cultura española,
+                        ofrecemos las herramientas y el conocimiento necesarios
+                        para asegurar un futuro robusto para el arte y la
+                        cultura en el país. Mantente informado e inspirado con
+                        nuestros artículos estimulantes, diseñados para
+                        mantenerte a la vanguardia del panorama cultural
+                        español.
+                    </p>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div
+                        class="col-lg-6 col-xl-6 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div
+                            class="blog-item position-relative bg-light rounded"
+                        >
+                            <img
+                                src="img/blog-1.jpg"
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                            />
+                            <span
+                                class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                                style="top: -28px; right: 20px"
+                            >
+                                Cultura
+                            </span>
+                            <div
+                                class="blog-content text-center position-relative px-3"
+                                style="margin-top: 20px"
+                            >
+                                <span class="text-secondary"
+                                    >24 Marzo 2023</span
+                                >
+                                <h5 class="mt-4">
+                                    La Ventaja Estratégica del Arte
+                                    Contemporáneo en el Mercado Cultural
+                                </h5>
+                                <p class="py-2">
+                                    Descubre cómo las estrategias culturales
+                                    están marcando nuevos estándares en el mundo
+                                    del arte en España, ofreciendo un mapa hacia
+                                    un crecimiento sostenible en el mercado
+                                    cultural español.
+                                </p>
+                            </div>
+                            <div
+                                class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom"
+                            >
+                                <a href="" class="text-white"
+                                    ><small
+                                        ><i
+                                            class="fas fa-share me-2 text-secondary"
+                                        ></i
+                                        >24 Compartir</small
+                                    ></a
+                                >
+                                <a href="" class="text-white"
+                                    ><small
+                                        ><i
+                                            class="fa fa-comments me-2 text-secondary"
+                                        ></i
+                                        >5 Comentarios</small
+                                    ></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-xl-6 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div
+                            class="blog-item position-relative bg-light rounded"
+                        >
+                            <img
+                                src="img/blog-6.jpg"
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                            />
+                            <span
+                                class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                                style="top: -28px; right: 20px"
+                            >
+                                Crecimiento
+                            </span>
+                            <div
+                                class="blog-content text-center position-relative px-3"
+                                style="margin-top: 20px"
+                            >
+                                <span class="text-secondary">04 Mayo 2024</span>
+                                <h5 class="mt-4">
+                                    Desbloqueando el Potencial de la Cultura
+                                    Española
+                                </h5>
+                                <p class="py-2">
+                                    Explora las oportunidades dentro de la
+                                    cultura española y cómo está convirtiéndose
+                                    en una piedra angular para aquellos que
+                                    buscan aprovechar los vastos recursos
+                                    culturales del país.
+                                </p>
+                            </div>
+                            <div
+                                class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom"
+                            >
+                                <a href="" class="text-white"
+                                    ><small
+                                        ><i
+                                            class="fas fa-share me-2 text-secondary"
+                                        ></i
+                                        >120 Compartir</small
+                                    ></a
+                                >
+                                <a href="" class="text-white"
+                                    ><small
+                                        ><i
+                                            class="fa fa-comments me-2 text-secondary"
+                                        ></i
+                                        >70 Comentarios</small
+                                    ></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- NEWS Start -->
+        <div class="container-fluid testimonial py-5 my-5">
+            <div class="container py-5">
+                <div
+                    class="text-center mx-auto pb-5 wow fadeIn"
+                    data-wow-delay=".3s"
+                    style="max-width: 600px"
+                >
+                    <h5 class="text-primary">
+                        Noticias de Arte, Deportes y Cultura en España
+                    </h5>
+                    <h1>
+                        Las Últimas Tendencias Culturales y Deportivas en España
+                    </h1>
+                    <p>
+                        En este espacio te mantenemos informado sobre lo más
+                        relevante del arte, el deporte y la cultura en España.
+                        Desde las últimas exposiciones de arte hasta los eventos
+                        deportivos más destacados, nuestro enfoque está en
+                        ofrecerte una visión integral de los movimientos
+                        culturales más importantes. Descubre las innovaciones en
+                        el arte contemporáneo, los logros en el mundo deportivo
+                        y los avances en la cultura española que están marcando
+                        el rumbo del país. Aquí encontrarás todo lo que
+                        necesitas saber para estar al tanto de lo más destacado
+                        en el mundo cultural y deportivo español.
+                    </p>
+                </div>
+                <div
+                    class="owl-carousel testimonial-carousel wow fadeIn"
+                    data-wow-delay=".5s"
+                >
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="">
+                                <img src="img/news-item-1.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <h4 class="text-secondary">
+                                Arte Contemporáneo en Madrid
+                            </h4>
+                            <p class="mb-0">
+                                La escena del arte contemporáneo en Madrid sigue
+                                creciendo. Con exposiciones de artistas
+                                emergentes y reconocidos en las principales
+                                galerías de la ciudad, el arte en Madrid está
+                                viviendo un momento de renacimiento. Descubre lo
+                                último que está ocurriendo en la capital
+                                española.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="">
+                                <img src="img/news-item-2.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <h4 class="text-secondary">
+                                Triunfo Deportivo en los Juegos Olímpicos
+                            </h4>
+                            <p class="mb-0">
+                                La delegación española ha destacado una vez más
+                                en los Juegos Olímpicos, con medallas en
+                                disciplinas clave como tenis, atletismo y
+                                ciclismo. Repasa los momentos más emocionantes y
+                                los logros que siguen colocando a España como
+                                una potencia deportiva a nivel internacional.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="">
+                                <img src="img/news-item-3.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <h4 class="text-secondary">
+                                La Cultura Flamenca en el Siglo XXI
+                            </h4>
+
+                            <p class="mb-0">
+                                El flamenco sigue siendo una de las formas más
+                                auténticas de expresión cultural en España. Hoy
+                                en día, se fusiona con otros géneros musicales y
+                                se reinventa, manteniendo su relevancia en la
+                                cultura moderna. Conoce las nuevas propuestas de
+                                artista.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="">
+                                <img src="img/news-item-4.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <h4 class="text-secondary">
+                                El Cine Español: Nuevas Producciones
+                            </h4>
+
+                            <p class="mb-0">
+                                El cine español sigue conquistando audiencias a
+                                nivel mundial. Con una mezcla de cine de autor y
+                                grandes producciones, el panorama
+                                cinematográfico en España se encuentra en pleno
+                                auge. Conoce los proyectos más esperados y las
+                                películas que están marcando tendencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NEWS End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-5 mt-5">
+            <div class="container py-5">
+                <div
+                    class="text-center mx-auto pb-5 wow fadeIn"
+                    data-wow-delay=".3s"
+                    style="max-width: 600px"
+                >
+                    <h5 class="text-primary">Ponte en Contacto</h5>
+                    <h1 class="mb-3">Contáctanos para cualquier consulta</h1>
+                </div>
+                <div class="contact-detail position-relative p-5">
+                    <form action="thanks.html" method="GET">
+                        <div class="row g-5">
+                            <div
+                                class="col-lg-12 wow fadeIn"
+                                data-wow-delay=".5s"
+                            >
+                                <div class="p-5 rounded contact-form">
+                                    <div class="mb-4">
+                                        <input
+                                            type="text"
+                                            class="form-control border-0 py-3"
+                                            placeholder="Tu Nombre"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-4">
+                                        <input
+                                            type="text"
+                                            class="form-control border-0 py-3"
+                                            placeholder="Tu Apellido"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-4">
+                                        <input
+                                            type="email"
+                                            class="form-control border-0 py-3"
+                                            placeholder="Tu Correo Electrónico"
+                                            id="email"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-4">
+                                        <select
+                                            name="Tipo de servicio"
+                                            aria-valuemax="tipo de servicio"
+                                            id=""
+                                            required
+                                        >
+                                            <option value="deportes">
+                                                Deportes
+                                            </option>
+                                            <option value="arte">Arte</option>
+                                            <option value="cultura">
+                                                Cultura
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input
+                                            required
+                                            style="width: 100% !important"
+                                            type="text"
+                                            inputmode="numeric"
+                                            pattern="^[0-9]+$"
+                                            class="form-control"
+                                            id="phone"
+                                            placeholder="Número de Teléfono"
+                                        />
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <textarea
+                                            class="w-100 form-control border-0 py-3"
+                                            rows="6"
+                                            cols="10"
+                                            placeholder="Mensaje"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                    <div class="text-start">
+                                        <button
+                                            class="btn bg-primary text-white py-3 px-5"
+                                            type="submit"
+                                            id="submit"
+                                        >
+                                            Enviar Mensaje
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid footer bg-dark wow fadeIn"
+            data-wow-delay=".3s"
+        >
+            <div class="container pt-5 pb-4">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html">
+                            <h1 class="text-white fw-bold d-block">
+                                VibrArte<span class="text-secondary"
+                                    >Noticias</span
+                                >
+                            </h1>
+                        </a>
+                        <p class="mt-4 text-light">
+                            En el corazón de nuestra misión está el compromiso
+                            de ofrecer las mejores noticias y análisis en el
+                            ámbito del arte, el deporte y la cultura en España.
+                            Nuestro sitio está diseñado para ofrecerte artículos
+                            completos, insights expertos y soluciones
+                            innovadoras relacionadas con la cultura española.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="h3 text-secondary"
+                            >Enlaces de Ayuda</a
+                        >
+                        <div class="mt-4 d-flex flex-column help-link">
+                            <a href="index.html" class="mb-2 text-white">
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Inicio
+                            </a>
+                            <a
+                                href="privacy-policy.html"
+                                class="mb-2 text-white"
+                            >
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Política de Privacidad
+                            </a>
+                            <a
+                                href="cookie-policy.html"
+                                class="mb-2 text-white"
+                            >
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Política de Cookies
+                            </a>
+                            <a href="disclaimer.html" class="mb-2 text-white">
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Descargo de Responsabilidad
+                            </a>
+                            <a
+                                href="business-model.html"
+                                class="mb-2 text-white"
+                            >
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Modelo de negocio
+                            </a>
+                            <a href="terms-of-use.html" class="mb-2 text-white">
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Condiciones de uso
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="h3 text-secondary">Contáctanos</a>
+                        <div
+                            class="text-white mt-4 d-flex flex-column contact-link"
+                        >
+                            <a
+                                href="#"
+                                class="pb-3 text-light border-bottom border-primary"
+                            >
+                                <i
+                                    class="fas fa-map-marker-alt text-secondary me-2"
+                                ></i>
+                                Gran Via de les Corts Catalanes, 688, Entresuelo
+                                2B, L'Eixample, 08018 Barcelona, España
+                            </a>
+                            <a
+                                href="#"
+                                class="py-3 text-light border-bottom border-primary"
+                            >
+                                <i
+                                    class="fas fa-phone-alt text-secondary me-2"
+                                ></i
+                                >+34698713024
+                            </a>
+                            <a
+                                href="#"
+                                class="py-3 text-light border-bottom border-primary"
+                            >
+                                <i
+                                    class="fas fa-envelope text-secondary me-2"
+                                ></i
+                                >vibr_arte@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Consentimiento de Cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Este sitio web utiliza
+                    <a href="privacy-policy.html">política de privacidad</a>
+                    para ofrecerte una mejor experiencia de navegación, enfocada
+                    en noticias relacionadas con arte, deportes y cultura en
+                    España. Puedes obtener más detalles en nuestra
+                    <a href="cookie-policy.html">política de cookies</a>.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Aceptar</button>
+                <button class="cookie-button" id="declineBtn">Rechazar</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-secondary btn-square rounded-circle back-to-top"
+            ><i class="fa fa-arrow-up text-white"></i
+        ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script src="js/cookiebanner.js"></script>
+        <script>
+            const input = document.querySelector('#phone');
+            window.intlTelInput(input, {
+                loadUtils: () =>
+                    import(
+                        'https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js'
+                    ),
+            });
+        </script>
+    </body>
+</html>
